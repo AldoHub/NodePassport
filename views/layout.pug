@@ -1,0 +1,39 @@
+doctype html
+html
+  head  
+    title Node Passport
+    link(rel="stylesheet" type="text/css" href="/css/main.css")
+    link(href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous")
+    
+    
+  body
+    div.container 
+     
+        nav
+          ul
+            li 
+              a(href="/") Node Passport
+          
+          ul
+            if(!isAuthenticated)
+              li
+                a(href="/") Register
+              li
+                a(href="/users/login") Login  
+
+            else
+              li
+                a(href="/users/profile") Dashboard
+              li
+                a(href="/users/logout") Logout  
+
+            
+        header      
+          div
+            h1 Node Passport   
+            p A simple App built with Node / Express / Passport  
+        div.border  
+        block content
+        
+  

@@ -1,0 +1,139 @@
+body {
+    background: #111;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins";
+    color: #fff;
+}
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+   
+}
+
+nav {
+    padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li {
+    list-style: none;
+    display:  inline-block;
+}
+nav ul li a {
+    font-weight: bold;
+    color: #eee;
+    text-decoration: none;
+}
+
+nav ul:first-of-type li a {
+   font-size: 1.2rem;
+}
+
+nav ul:last-of-type li{
+   margin-right: 20px; 
+}
+
+header div {
+    padding-top: 60px;
+}
+
+header h1 {
+    font-size: 9rem;
+    line-height: 8rem;
+    width: 60%;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+
+.border {
+    height: 5px;
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+form {
+    width:40%;
+}
+
+form * {
+    display: block;
+    width: 100%;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"] {
+    border:none;
+    background: none;
+    padding: 10px 0px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+    color: #eee;
+}
+
+form input[type="submit"]{
+    padding: 10px;
+    width: 40%;
+    border: none;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+input[type="file"] {
+    display: none;
+}
+label.avatar {
+    width: 20%;
+    min-width: 100px;
+    height: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #111;
+    padding: 10px;
+    background: #f80759;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    text-indent: 10px;
+}
+
+label.avatar i{
+    font-size: 1.2rem;
+    padding-right: 10px;
+    display: inline-block;
+    width: 30px;
+}
+
+.dashboard > div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.useravatar {
+    width: 30%;
+    background-size: 100% !important;
+    display: block;
+    max-width: 350px;
+    height: 300px;
+    margin-right: 30px;
+}
+.userinfo {
+    width: 70%;
+
+}
